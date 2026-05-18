@@ -1,0 +1,182 @@
+/*
+Theme Name: Fair Child
+Theme URI: http://fair.edge-themes.com/
+Description: A child theme of Fair Theme
+Author: Edge Themes
+Author URI: http://themeforest.net/user/edge-themes
+Version: 1.0.0
+Template: fair
+*/
+/* @import url("../fair/style.css"); */
+
+.edgtf-light-header .edgtf-top-bar, .edgtf-light-header .edgtf-top-bar .widget, .edgtf-light-header .edgtf-top-bar .widget .edgtf-icon-shortcode>a, .edgtf-light-header .edgtf-top-bar .widget .edgtf-icon-shortcode>i, .edgtf-light-header .edgtf-top-bar .widget .edgtf-icon-shortcode>span, .edgtf-light-header .edgtf-top-bar .widget .widgettitle, .edgtf-light-header .edgtf-top-bar .widget a, .edgtf-light-header .edgtf-top-bar .widget i, .edgtf-light-header .edgtf-top-bar .widget p, .edgtf-light-header .edgtf-top-bar .widget span, .edgtf-top-bar-light .edgtf-top-bar, .edgtf-top-bar-light .edgtf-top-bar .widget, .edgtf-top-bar-light .edgtf-top-bar .widget .edgtf-icon-shortcode>a, .edgtf-top-bar-light .edgtf-top-bar .widget .edgtf-icon-shortcode>i, .edgtf-top-bar-light .edgtf-top-bar .widget .edgtf-icon-shortcode>span, .edgtf-top-bar-light .edgtf-top-bar .widget .widgettitle, .edgtf-top-bar-light .edgtf-top-bar .widget a, .edgtf-top-bar-light .edgtf-top-bar .widget i, .edgtf-top-bar-light .edgtf-top-bar .widget p, .edgtf-top-bar-light .edgtf-top-bar .widget span {
+  color: #fff !important;
+}
+
+.post-type-archive-faq.edgtf-light-header .edgtf-top-bar,
+.post-type-archive-faq.edgtf-light-header .edgtf-top-bar .widget,
+.post-type-archive-faq.edgtf-dark-header .edgtf-top-bar,
+.post-type-archive-faq.edgtf-dark-header .edgtf-top-bar .widget {
+  color: #fff !important;
+}
+
+@media only screen and (min-width: 768px) {
+  .post-type-archive-faq .edgtf-accordion-holder,
+  .post-type-archive-faq .gform_wrapper
+   {
+    padding: 0% 20%;
+  }
+}
+
+#text-11 a {
+  background: #387ce0;
+  color: #fff !important;
+  transition: color 1s ease;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  border-radius: 25px;
+  padding: 15px 25px;
+  font-weight: bold;
+}
+
+#text-11 a:hover  {
+  color: #aaa !important;
+}
+
+.gform_wrapper::-webkit-input-placeholder {
+    color: #757575 !important;
+}
+
+.gform_wrapper:-moz-placeholder {
+    color: #757575 !important;
+}
+
+.gform_wrapper::-moz-placeholder {
+    color: #757575 !important;
+}
+
+.gform_wrapper:-ms-input-placeholder {
+    color: #757575 !important;
+}
+
+.gform_wrapper select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.gform_wrapper input,
+.gform_wrapper input[type=text],
+.gform_wrapper input[type=number],
+.gform_wrapper input[type=date],
+.gform_wrapper textarea,
+.gform_wrapper select,
+.gform_wrapper input[type=quiz]{
+    color: #757575 !important;
+    font-size: 14px !important;
+    line-height: 14px !important;
+    font-family: Raleway !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    text-transform: capitalize !important;
+    letter-spacing: 0px !important;
+    background-color: rgba(248, 248, 248, 1) !important;
+    border-width: 0px !important;
+    border-radius: 0px !important;
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.gform_wrapper input:focus::-webkit-input-placeholder,
+.gform_wrapper textarea:focus::-webkit-input-placeholder {
+    color: #000000 !important;
+}
+
+.gform_wrapper input:focus:-moz-placeholder,
+.gform_wrapper textarea:focus:-moz-placeholder {
+    color: #000000 !important;
+}
+
+.gform_wrapper input:focus::-moz-placeholder,
+.gform_wrapper textarea:focus::-moz-placeholder {
+    color: #000000 !important;
+}
+
+.gform_wrapper input:focus:-ms-input-placeholder,
+.gform_wrapper textarea:focus:-ms-input-placeholder {
+    color: #000000 !important;
+}
+
+.gform_wrapper input:focus,
+.gform_wrapper input[type=text]:focus,
+.gform_wrapper input[type=number]:focus,
+.gform_wrapper input[type=date]:focus,
+.gform_wrapper textarea:focus,
+.gform_wrapper select:focus,
+.gform_wrapper input[type=quiz]:focus {
+    color: #000000 !important;
+    background-color: rgba(248, 248, 248, 1) !important;
+}
+
+.gform_wrapper input[type=submit] {
+    color: #ffffff !important;
+    font-size: 13px !important;
+    height: 50px !important;
+    font-family: Raleway !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    background-color: rgba(37, 37, 37, 1) !important;
+    border-color: rgba(37, 37, 37, 1) !important;
+    border-width: 1px !important;
+    border-radius: 30px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+
+.gform_wrapper input[type=submit]:not([disabled]):hover {
+    color: #ffffff !important;
+    background-color: rgba(56, 124, 224, 1) !important;
+    border-color: rgba(56, 124, 224, 1) !important;
+}
+
+.gform_wrapper input[type=text],
+.gform_wrapper textarea,
+.gform_wrapper input[type=date],
+.gform_wrapper input[type=number],
+.gform_wrapper input[type=quiz],
+.gform_wrapper select,
+.gform_wrapper textarea{
+    width: 100% !important;
+    margin-top: 0 !important;
+    padding: 10px 15px !important;
+    border: 2px solid #e5e5e5 !important;
+    outline: 0 !important;
+    font-family: inherit !important;
+    font-size: 14px !important;
+    background-color: #fff !important;
+    color: #757575 !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    -webkit-appearance: none !important;
+}
+
+.ginput_container {
+  margin-bottom: 26px !important;
+}
+
+.gform_wrapper textarea:focus,
+.gform_wrapper input[type=date]:focus,
+.gform_wrapper input[type=number]:focus,
+.gform_wrapper input[type=quiz]:focus,
+.gform_wrapper select:focus,
+.gform_wrapper input[type=text]:focus {
+    border: 2px solid #387ce0 !important;
+}
+
+.edgtf-projects-slider .edgtf-slick-dots-with-number li {
+  margin-bottom: 5px;
+}
