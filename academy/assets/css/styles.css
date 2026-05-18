@@ -81,6 +81,35 @@ a {
   font-size: 18px;
 }
 
+.menu-toggle {
+  width: 44px;
+  height: 44px;
+  display: none;
+  place-items: center;
+  gap: 4px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: white;
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.menu-toggle-line {
+  width: 20px;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -720,14 +749,51 @@ h3 {
 
 @media (max-width: 900px) {
   .nav {
-    height: auto;
-    padding: 14px 0;
-    align-items: flex-start;
-    flex-direction: column;
+    height: 64px;
+    padding: 0;
+    position: relative;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+
+  .menu-toggle {
+    flex: 0 0 auto;
+    display: grid;
   }
 
   .nav-links {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
     justify-content: flex-start;
+    gap: 8px;
+    max-height: min(68vh, 420px);
+    overflow-y: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px;
+    background: rgba(255, 255, 255, .98);
+    box-shadow: var(--shadow);
+  }
+
+  .nav.is-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    justify-content: flex-start;
+    white-space: normal;
   }
 
   .course-grid,
@@ -743,6 +809,17 @@ h3 {
 
   .lesson-nav {
     position: static;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x proximity;
+  }
+
+  .lesson-nav a {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    scroll-snap-align: start;
   }
 
   .portal-image {
